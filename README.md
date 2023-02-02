@@ -15,6 +15,8 @@ I wanted to create this project for practice, to learn, to challenge myself, and
 
 [Demo](https://youtube.com/shorts/TCV5RlMyKhI)
 
+https://user-images.githubusercontent.com/46323883/216476174-4d4a3572-e288-461c-95cf-c09bc3e6274d.mov
+
 
 ## Tech/framework used
 React Native Expo
