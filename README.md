@@ -1,4 +1,4 @@
-## Random Color Palette Generator
+## Tinder style swipe mobile app
 Created for an app challenge from devprojects (https://codementor.io)
 
 Link: (https://www.codementor.io/projects/mobile/tinder-style-swipe-mechanism-for-an-ios-app-bh9ph8n1co)
