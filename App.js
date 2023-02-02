@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import { Image, StyleSheet, View, TouchableOpacity, Text, Dimensions } from 'react-native';
 
 import CardsSwipe from 'react-native-cards-swipe';
@@ -17,10 +17,11 @@ const cardsData = [
 ];
 
 export default function App() {
+  const swipe = useRef(null);
   return (
     <View style={styles.container}>
       <CardsSwipe
-      ref={swiper => { swiper = swiper }}
+        ref={swipe}
         cards={cardsData}
         cardContainerStyle={styles.cardContainer}
         renderCard={(card) => (
@@ -32,10 +33,10 @@ export default function App() {
           </View>
         )}
       />
-      <TouchableOpacity style={[styles.buttons, {backgroundColor: "#9bb783", bottom: 50, right: 50}]} onPress={ () => { swiper.swipeLeft() }}>
+      <TouchableOpacity style={[styles.buttons, {backgroundColor: "#9bb783", bottom: 50, right: 50}]} onPress={ () => { swipe.current.swipeRight() }}>
     <Text style={{color: '#F8F7F1'}}>Right</Text>
   </TouchableOpacity>
-  <TouchableOpacity style={[styles.buttons, {backgroundColor: "#924D40", bottom: 50, left: 50, }]} onPress={ () => { swiper.swipeLeft() }}>
+  <TouchableOpacity style={[styles.buttons, {backgroundColor: "#924D40", bottom: 50, left: 50, }]} onPress={ () => { swipe.current.swipeLeft() }}>
     <Text style={{color: '#F8F7F1'}}>Left</Text>
   </TouchableOpacity>
     </View>
