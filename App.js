@@ -32,9 +32,12 @@ export default function App() {
           </View>
         )}
       />
-      {/* <TouchableOpacity style={{backgroundColor: "#000", position: 'absolute', bottom: 50, right: 50, height: 75, width: 75, borderRadius: 50}} onPress={ () => { swiper.swipeLeft() }}>
-    <Text>Left</Text>
-  </TouchableOpacity> */}
+      <TouchableOpacity style={[styles.buttons, {backgroundColor: "#9bb783", bottom: 50, right: 50}]} onPress={ () => { swiper.swipeLeft() }}>
+    <Text style={{color: '#F8F7F1'}}>Right</Text>
+  </TouchableOpacity>
+  <TouchableOpacity style={[styles.buttons, {backgroundColor: "#924D40", bottom: 50, left: 50, }]} onPress={ () => { swiper.swipeLeft() }}>
+    <Text style={{color: '#F8F7F1'}}>Left</Text>
+  </TouchableOpacity>
     </View>
   );
 }
@@ -69,4 +72,19 @@ const styles = StyleSheet.create({
     height: 300,
     borderRadius: 13,
   },
+  buttons: {
+    shadowColor: 'gray',
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 1,
+    height: 75, 
+    width: 75, 
+    borderRadius: 50, 
+    alignItems: 'center', 
+    justifyContent: 'center',
+    position: 'absolute',
+  }
 });
