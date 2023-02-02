@@ -22,6 +22,7 @@ React Native Expo
 - [Expo](https://expo.dev/)
 - [React Native](https://reactnative.dev/)
 - [react-native-deck-swiper](https://github.com/webraptor/react-native-deck-swiper)
+- [Lorem Picsum API](https://picsum.photos/)
 
 ## Features
 
